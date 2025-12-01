@@ -41,3 +41,29 @@ docker-compose up -d
 docker-compose down
 
 
+
+
+nagios
+
+docker pull jasonrivers/nagios:latest
+docker run --name nagiosdemo -p 8888:80 jasonrivers/nagios:latest
+http://localhost:8888
+ Username: nagiosadmin
+  Password: nagios	
+
+
+docker stop nagiosdemo
+docker rm nagiosdemo
+docker rmi jasonrivers/nagios:latest
+
+
+
+
+
+
+
+
+
+
+
+
