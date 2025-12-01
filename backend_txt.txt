@@ -73,6 +73,10 @@
 
 </project>
 
+docker build -t web-app:1.0 .
+docker run -p 8080:8080 web-app:1.0
+
+
 
 
 
@@ -174,4 +178,11 @@
     </build>
 
 </project>
+
+
+
+docker-compose up --build
+docker-compose up -d
+docker-compose down
+
 
